@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+$green: #86BB71;
+$blue: #94C2ED;
+$orange: #E38968;
+$gray: #92959E;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #C5DDEB;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  padding: 40px 0;
+  color: white;
+}
+
+.container {
+  margin: 0 auto;
+  width: 750px;
+  background: #444753;
+  border-radius: 5px;
+}
+.contacts {
+  width:260px;
+  float: left;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+#avatar {
+    /* make a square container */
+    width: 150px;
+    height: 150px;
+
+    /* fill the container, preserving aspect ratio, and cropping to fit */
+    background-size: cover;
+
+    /* center the image vertically and horizontally */
+    background-position: center;
+
+    /* round the edges to a circle with border radius 1/2 container size */
+    border-radius: 50%;
+}
+.about {
+     float: left;
+     padding-left: 10px;
+     margin-top: 6px;
+   }
+
+    .status {
+      font-size: 16px;
+      color: gray;
+      cursor: pointer;
+      margin-right: 3px;
+      font-size: 10px;
+      text-align: left;
+    }
+    .name {
+      font-size: 24px;
+      text-align: left;
+      color: black;
+      margin-right: 3px;
+    }
