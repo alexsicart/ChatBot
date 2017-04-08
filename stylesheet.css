@@ -4,10 +4,6 @@ $blue: #94C2ED;
 $orange: #E38968;
 $gray: #92959E;
 
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
 body {
   background: #C5DDEB;
   font: 14px/20px "Lato", Arial, sans-serif;
