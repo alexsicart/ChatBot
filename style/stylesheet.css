@@ -1,13 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 
-$green: #86BB71;
-$blue: #94C2ED;
-$orange: #E38968;
-$gray: #92959E;
-
-*, *:before, *:after {
-  box-sizing: border-box;
-}
 
 body {
   background: #C5DDEB;
@@ -35,17 +27,11 @@ body {
 	height: 0;
 }
 #avatar {
-    /* make a square container */
+
     width: 150px;
     height: 150px;
-
-    /* fill the container, preserving aspect ratio, and cropping to fit */
     background-size: cover;
-
-    /* center the image vertically and horizontally */
     background-position: center;
-
-    /* round the edges to a circle with border radius 1/2 container size */
     border-radius: 50%;
 }
 .about {
