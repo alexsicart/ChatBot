@@ -1,56 +1,112 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
-
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 body {
-  background: #C5DDEB;
-  font: 14px/20px "Lato", Arial, sans-serif;
-  padding: 40px 0;
-  color: white;
+  background-color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  background-image: url("http://www.newsonair.org/images/marvelous-san-francisco-landscape-1-golden-gate-bridge-san-francisco-1394-x-650.jpg");
+  background-size: cover;
+  background-repeat: none;
+}
+
+.wrapper {
+  position: relative;
+  left: 50%;
+  width: 1000px;
+  height: 800px;
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 
 .container {
-  margin: 0 auto;
-  width: 750px;
-  background: #444753;
-  border-radius: 5px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 75%;
+  background-color: #fff;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-.contacts {
-  width:260px;
+.container .left {
   float: left;
+  width: 37.6%;
+  height: 100%;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
 }
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-}
-#avatar {
 
-    width: 150px;
-    height: 150px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
-}
-.about {
-     float: left;
-     padding-left: 10px;
-     margin-top: 6px;
-   }
 
-    .status {
-      font-size: 16px;
-      color: gray;
-      cursor: pointer;
-      margin-right: 3px;
-      font-size: 10px;
-      text-align: left;
-    }
-    .name {
-      font-size: 24px;
-      text-align: left;
-      color: black;
-      margin-right: 3px;
-    }
+.container .left .people {
+  margin-left: -1px;
+  border-right: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  width: -moz-calc(100% + 2px);
+  width: -webkit-calc(100% + 2px);
+  width: -o-calc(100% + 2px);
+  width: calc(100% + 2px);
+}
+.container .left .people .person {
+  position: relative;
+  width: 100%;
+  padding: 12px 10% 16px;
+  cursor: pointer;
+  background-color: #fff;
+}
+.container .left .people .person:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 80%;
+  height: 1px;
+  content: '';
+  background-color: #e6e6e6;
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.container .left .people .person img {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.container .left .people .person .name {
+  font-size: 14px;
+  line-height: 22px;
+  color: #1a1a1a;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+}
+.container .left .people .person .time {
+  font-size: 14px;
+  position: absolute;
+  top: 16px;
+  right: 10%;
+  padding: 0 0 5px 5px;
+  color: #999;
+  background-color: #fff;
+}
+.container .left .people .person .preview {
+  font-size: 14px;
+  display: inline-block;
+  overflow: hidden !important;
+  width: 70%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #999;
+}
