@@ -1,7 +1,5 @@
 $(document).ready(function(){
-
-$('.person').click(function(){
-  $('.person').hide();
-
-  });
+    $('.left .person').click(function(){
+        $('.left .person .person1').remove();
+    });
 });
