@@ -81,6 +81,10 @@ body {
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
+.container .left .people .person:hover {
+  background-color: yellow;
+}
+
 .container .left .people .person img {
   float: left;
   width: 40px;
