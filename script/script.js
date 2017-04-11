@@ -1,5 +1,8 @@
 $(document).ready(function(){
-    $('.container .right .chat').click(function(){
-        $('.container .left .people .person .time').hide();
-    });
+$('.container .left .people .person #person1').click(function(){
+  $('.container .right .chat').add('Hello');
+
+  });
+
+
 });
