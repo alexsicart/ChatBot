@@ -11,9 +11,9 @@ body {
   background-color: black;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  background-image: url("http://www.newsonair.org/images/marvelous-san-francisco-landscape-1-golden-gate-bridge-san-francisco-1394-x-650.jpg");
-  background-size: cover;
-  background-repeat: none;
+  background-image: linear-gradient(to bottom left, #8658c9, #0365C0);
+  background-repeat: no-repeat;
+  background-color: #0365C0;
 }
 
 .wrapper {
@@ -33,7 +33,7 @@ body {
   top: 50%;
   left: 50%;
   width: 80%;
-  height: 75%;
+  height: 77%;
   background-color: #fff;
   /* To move from his current position */
   -moz-transform: translate(-50%, -50%);
@@ -45,15 +45,15 @@ body {
   float: left;
   width: 37.6%;
   height: 100%;
-  border: 1px solid #e6e6e6;
+  border: 4px solid purple;
   background-color: #fff;
 }
 
 
 .container .left .people {
   margin-left: -1px;
-  border-right: 1px solid #e6e6e6;
-  border-left: 1px solid #e6e6e6;
+  border-right: 1px solid purple;
+  border-left: 1px solid purple;
   width: -moz-calc(100% + 2px);
   width: -webkit-calc(100% + 2px);
   width: -o-calc(100% + 2px);
@@ -75,15 +75,13 @@ body {
   height: 1px;
   content: '';
   /* To move from his current position */
-  background-color: #e6e6e6;
+  background-color: purple;
   -moz-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
-.container .left .people .person:hover {
-  background-color: yellow;
-}
+
 
 .container .left .people .person img {
   float: left;
@@ -93,21 +91,23 @@ body {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+  border-color: 2px solid purple;
 }
 .container .left .people .person .name {
   font-size: 14px;
   line-height: 22px;
-  color: #1a1a1a;
+  color: black;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
+  text-align: center;
 }
 .container .left .people .person .time {
   font-size: 14px;
   position: absolute;
   top: 16px;
-  right: 10%;
+  right: 5%;
   padding: 0 0 5px 5px;
-  color: #999;
+  color: #8658c9;
   background-color: #fff;
 }
 .container .left .people .person .preview {
@@ -117,7 +117,7 @@ body {
   width: 70%;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #999;
+  color: #0365C0;
 }
 
   .container .right {
@@ -125,30 +125,26 @@ body {
   float: left;
   width: 62.4%;
   height: 100%;
+  border: 3px solid purple;
 }
 .container .right .top {
   width: 100%;
   height: 47px;
   padding: 15px 29px;
-  background-color: #eceff1;
+  background-color: purple;
 }
 .container .right .top span {
   font-size: 15px;
   color: #999;
 }
 .container .right .top span .name {
-  color: #1a1a1a;
+  color: white;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
 }
 .container .right .chat {
   position: relative;
-  display: none;
-  overflow: hidden;
-  padding: 0 35px 92px;
-  border-width: 1px 1px 1px 0;
-  border-style: solid;
-  border-color: #e6e6e6;
+  padding: 0 40px 92px;
   height: -moz-calc(100% - 48px);
   height: -webkit-calc(100% - 48px);
   height: -o-calc(100% - 48px);
@@ -157,4 +153,60 @@ body {
   justify-content: flex-end;
   -webkit-flex-direction: column;
   flex-direction: column;
+}
+  .container .right .chat span  {
+    position: relative;
+    font-size: 19px;
+    color: purple;
+    top: 20px;
+
+  }
+  .container .right .chat span .name  {
+    color: purple;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+
+  }
+
+
+  .container .right .write {
+  position: absolute;
+  bottom: 29px;
+  left: 30px;
+  height: 42px;
+  padding-left: 8px;
+  border: 0px solid purple;
+  background-color: white;
+  width: -moz-calc(100% - 58px);
+  width: -webkit-calc(100% - 58px);
+  width: -o-calc(100% - 58px);
+  width: calc(100% - 58px);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.container .right .write input {
+  font-size: 16px;
+  float: left;
+  width: 347px;
+  height: 40px;
+  padding: 0 10px;
+  color: black;
+  border: 2px solid purple;
+  outline: none;
+  background-color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+.container .right .write .write-link.send:before {
+  display: inline-block;
+  float: left;
+  width: 20px;
+  height: 42px;
+  margin-left: 11px;
+  content: '';
+  background-image: url("http://s30.postimg.org/nz9dho0pp/send.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
