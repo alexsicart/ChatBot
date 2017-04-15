@@ -5,16 +5,13 @@ $(document).ready(function()
   $('.container .right .chat .name').append(function(){
     var joan = ['Hello', 'Goodbye', 'Bye', 'How are you?', 'What are you doing?', 'A dreamer', '!', 'Do it!', 'Ahhhh' ];
 
-var math = Math.round(Math.random()*1);
+    return  'Alex says: ' + ' ' + data + ' .<br/><br/> ';
 
-if(math === 0){
-        return  'Alex says: ' + ' ' + data + ' .<br/><br/> ';
+    $('.container .right .chat .name').append(function(){
 
-      } else {
+      return 'Joan says: ' + ' ' + joan[Math.floor(Math.random()*9)] + ' .<br/><br/> ';
 
-        return 'Joan says: ' + ' ' + joan[Math.floor(Math.random()*9)] + ' .<br/><br/> ';
-  }
-
+    });
 
 
     });
