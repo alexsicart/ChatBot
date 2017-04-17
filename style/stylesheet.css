@@ -21,7 +21,7 @@ body {
   left: 50%;
   width: 1000px;
   height: 800px;
-  /* To move from his current position */
+  /* To move from his current position, The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements */
   -moz-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
@@ -35,7 +35,7 @@ body {
   width: 80%;
   height: 77%;
   background-color: #fff;
-  /* To move from his current position */
+  /* To move from his current position, The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements */
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
@@ -74,7 +74,7 @@ body {
   width: 80%;
   height: 1px;
   content: '';
-  /* To move from his current position */
+  /* To move from his current positionm, The transform property applies a 2D or 3D transformation to an element. This property allows you to rotate, scale, move, skew, etc., elements */
   background-color: purple;
   -moz-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
@@ -113,8 +113,10 @@ body {
 .container .left .people .person .preview {
   font-size: 14px;
   display: inline-block;
+  /* To not be longer & longer */
   overflow: hidden !important;
   width: 70%;
+  /* Preview the text */
   white-space: nowrap;
   text-overflow: ellipsis;
   color: #0365C0;
@@ -202,11 +204,11 @@ body {
 .container .right .write .write-link.send:before {
   display: inline-block;
   float: left;
-  width: 20px;
+  width: 26px;
   height: 42px;
   margin-left: 11px;
   content: '';
-  background-image: url("http://s30.postimg.org/nz9dho0pp/send.png");
+  background-image: url("https://gateway.ipfs.io/ipfs/QmTanoktMX4WWgqmcF6P8vaGMYyGvdKy9gzBvCmYPmXkSd");
   background-repeat: no-repeat;
   background-position: center;
 }
