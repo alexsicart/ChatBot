@@ -2,12 +2,12 @@ $(document).ready(function()
 	{
       var joan = ['Hello', 'Goodbye', 'Bye', 'How are you?', 'What are you doing?', 'A dreamer', '!', 'Do it!', 'Ahhhh' ];
 
-	$(".container .right .write .write-link.send").click(function () {
+	$('#send').click(function () {
 
-	var data = $(".container .right .write input").val();
+	var data = $('.write .input').val();
 
-  $('.container .right .chat .name').append('Alex says: ' + ' ' + data + ' .<br/><br/> ');
-  $( ".container .right .chat .name" ).append('Joan says: ' + ' ' + joan[Math.floor(Math.random()*9)] + ' .<br/><br/> ');
+  $('.chat .name').append('Alex says: ' + ' ' + data + ' .<br/><br/> ');
+  $( '.chat .name' ).append('Joan says: ' + ' ' + joan[Math.floor(Math.random()*9)] + ' .<br/><br/> ');
 
 	});
 

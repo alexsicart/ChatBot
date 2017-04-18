@@ -200,15 +200,22 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
 }
+/*::before creates a pseudo-element that is the first child of the element matched. It is often used to add cosmetic content to an element by using the content property. This element is inline by default.*/
 
-.container .right .write .write-link.send:before {
+
+button,#send {
+  background-color: rgba(0,0,0,0);
+  border: none;
   display: inline-block;
   float: left;
   width: 26px;
   height: 42px;
   margin-left: 11px;
-  content: '';
   background-image: url("https://gateway.ipfs.io/ipfs/QmTanoktMX4WWgqmcF6P8vaGMYyGvdKy9gzBvCmYPmXkSd");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+button,#send:hover {
+  cursor: pointer;
 }
